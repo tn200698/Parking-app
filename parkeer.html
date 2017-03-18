@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="parkeer.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <script src="parkeer.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <input type="checkbox" class="nav-check" id="nav-check">
+                <label class="nav-label" for="nav-check">
+                    <div class="container" onclick="myFunction(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </label>
+                <ul class="nav">
+                    <li><a class="current" href="#section-1"><i class="fa fa-home"></i>&nbsp;Home</a></li>
+                    <li><a href="#section2"><i class="fa fa-address-book" ></i>&nbsp;registration</a></li>
+                    <li><a href="#section-3"><i class="fa fa-phone"></i>&nbsp;contact</a></li>
+                    <li><a href="#section-4"><i class="fa fa-users"></i>&nbsp;about us</a></li>
+                    <li><a href="#section-5"><i class="fa fa-users"></i>&nbsp;about us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="section-1">
+        <div class="header">
+            <a href="http://www.miniemeninstituut.be">M-Park</a> 
+        </div>
+        <div class="startpagina" id="background1">
+        </div>
+        <div class="startpagina" id="startpage1">
+            <p>An application made to register <span class="carlight">all the cars</span> parked<br>in a parking lot</p>
+        </div> 
+        <div class="startpagina" id="startpage2">
+            <h3> Miniemeninstituut Leuven</h3>
+            <p>Made by the students of 6 Accountancy Informatics</p>
+        </div>
+        <div class="startpagina" id="startpage3">
+            <a href="http://www.miniemeninstituut.be">Learn more about our school</a>
+        </div>
+        </section>
+        <section id="section2">
+        <div id="formulier">
+            <form>
+                <label for="nrplaat">Nummerplaat</label>
+                    <input type="text" id="nrplaat" name="nummerplaat" placeholder="Nummerplaat auto">
+                <label for="telnr">Telefoonnummer</label>
+                    <input type="text" id="telnr" name="telefoonnummer" placeholder="Telefoonnummer">
+                <label for="vrnaaam">Voornaam</label>
+                    <input type="text" id="vrnaam" name="voornaam" placeholder="Voornaam">
+                <label for="achtrnaam">Achternaam</label>
+                    <input type="text" id="achtrnaam" name="achternaam" placeholder="Achternaam">
+                <label for="aankmst">Aankomst</label>
+                    <input type="text" id="aankmst" name="aankomst" placeholder="Aankomst">
+                <iframe src="http://free.timeanddate.com/clock/i5m46hmh/n48/tlbe14/fs48/tcf2f2f2/ftb/th1" frameborder="0" width="195" height="57"></iframe>
+                <input type="submit" value="Opslaan">
+            </form>
+        </div>
+        <div id="uitcheck">
+            <form>
+                <label for="nrplaat">Nummerplaat</label>
+                    <input type="text" id="nrplaat" name="nummerplaat" placeholder="Nummerplaat auto">
+                <label for="uren">Aantal uren geparkeerd</label>
+                    <select id="uren" name="uren">
+                        <option value="1uur">1 uur</option>
+                        <option value="2uren">2 uren</option>
+                        <option value="3uren">3 uren</option>
+                        <option value="4uren">4 uren</option>
+                        <option value="5uren">5 uren</option>
+                        <option value="6uren">6 uren</option>
+                        <option value="7uren">7 uren</option>
+                        <option value="1dag">1 dag</option>
+                    </select>
+                <label for="prijs">Prijs</label>
+                    <input type="text" id="prijs" name="prijs" placeholder="Prijs te betalen">
+                <iframe src="http://free.timeanddate.com/clock/i5m46hmh/n48/tlbe14/fs48/tcf2f2f2/ftb/th1" frameborder="0" width="195" height="57"></iframe>
+                <input type="submit" value="Bereken">
+            </form>
+        </div>
+        </section>
+        <!-- contact pagina-->
+		<section id="section-3">
+        <div class="contact" id="contact">
+        <div id="contactKlant">
+            <h2>Gegevens klant</h2>
+            <p>6 Handel</p>
+            <p>Mimosa.miniemenistuut@hotmail.com</p>
+            <div id="contactKlantLogo"></div>
+        </div>
+        <div id="contactLeverancier">
+            <h2>Gegevens leverancier</h2>
+            <p>6 Boekhouden Infomatica</p>
+            <p>parkeer.app2@gmail.com</p>
+            <!-- logo van ons-->
+        </div>
+        </section>
+        <div id="footer-social-icons">
+            <ul class="social-icons">
+                <li><a href="https://www.facebook.com/" target="_blank" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/" target="_blank" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+                <li><a href="" class="social-icon"> <i class="fa fa-rss"></i></a></li>
+                <li><a href="http://www.youtube.com/" target="_blank" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+                <li><a href="https://www.linkedin.com/uas/login" target="_blank" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://plus.google.com/collections/featured?hl=nl" target="_blank" class="social-icon"> <i class="fa fa-google-plus"></i></a></li>
+            </ul>
+        </div>
+    </body>
+</html>
